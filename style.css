@@ -111,7 +111,7 @@ aside#basket h2{
     font-size: var(--fs-lg);
 }
 aside#basket p{
-    display: inline;
+    display: flex;
     flex-wrap: wrap;
     font-family: var(--ff-Lora);
 }
@@ -123,6 +123,7 @@ aside#basket div{
     align-items: center;
     border: 1px solid var(--Color-dark);
     margin: 10px;
+    position: relative;
 }
 aside#basket div:hover{
     background-color: var(--Color-purple-name-descr);
@@ -914,6 +915,26 @@ footer.footer p:last-child{
         flex-wrap: wrap;
         width: 65%;
         margin: 0 auto;
+    }
+    aside#basket{
+        width: 200px;
+    }
+    aside#basket div{
+        text-align: left;
+    }
+    aside#basket div p#price,
+    aside#basket p#countOfPosition,
+    aside#basket p#positionTitle{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    aside img{
+        margin: 0 auto;
+    }
+    aside#basket img[alt='delete']{
+        position: absolute;
+        top: 0;
+        right: 0;
     }
     .opinion:nth-of-type(2){
         margin: 44px auto 0 auto;
