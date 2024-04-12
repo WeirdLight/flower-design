@@ -943,4 +943,24 @@ footer.footer p:last-child{
     section.delivery div.container span.content{
         width: 170px;
     }
+    footer.footer img[alt='logo']{
+        width: 120px;
+        height: 45px;
+        bottom: 30px;
+    }
+    footer.footer{
+        height: 235px;
+    }
+    footer.footer p:last-of-type{
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    .our-functions .container > span:not(span.header) {
+        width: 150px;
+    }
+    html{
+        overflow-x: hidden;
+    }
 }
