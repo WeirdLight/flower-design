@@ -1,0 +1,21 @@
+{
+  "name": "flower-design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "/Users/katya/Desktop/course_project/scripts/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/WeirdLight/flower-design.git"
+  },
+  "keywords": [
+    "course",
+    "shop",
+    "flowers"
+  ],
+  "author": "Kate Diachuk",
+  "license": "ISC"
+}
