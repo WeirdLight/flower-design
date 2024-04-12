@@ -1,6 +1,7 @@
 import { createFragment } from "./fragments.js";
 import setTotalPrice from "./totalPrice.js";
 import itemsToBuy from './numOfItemsToBuy.js'
+import { post, deleteRequest } from "./basketForServer.js";
 
 export default function createTemplateBasket(parent){
     let container = document.getElementById('basket');
@@ -16,6 +17,7 @@ export default function createTemplateBasket(parent){
             let price = test.querySelector('#price');
             let priceStr = price.innerHTML.split(':'); 
             price.innerHTML = priceStr[0] + ': ' + (parent[0].price * num) + ' грн';
+            parent[0].amount++;
         }
     }
     catch{
@@ -32,16 +34,18 @@ export default function createTemplateBasket(parent){
         template.appendChild(createFragment(article));
         let totalPrice = container.querySelector('#total-price');
         container.insertBefore(template, totalPrice);
-        
+        parent[0].amount = 1;
         let del = document.getElementById(`delete${parent[0].id}`);
         del.addEventListener('click', () => {
             let parentEl = del.parentNode;
             let grandparents = parentEl.parentNode;
             grandparents.removeChild(parentEl);
+            deleteRequest(parent[0], parent[0].amount);
             itemsToBuy();
             setTotalPrice();
         });
     }
+    post(parent[0], parent[0].amount);
     itemsToBuy();
     setTotalPrice();
 }
