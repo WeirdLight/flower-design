@@ -787,7 +787,7 @@ footer.footer p:last-child{
         justify-content: center;
     }
     div.header{
-        width: 60%;
+        width: 70%;
     }
     div.burger{
         display: flex;
@@ -900,14 +900,19 @@ footer.footer p:last-child{
         margin-bottom: 18px;
         margin-right: 0;
     }
-    .opinion p, .opinion pre{
+    section.review span.text{
+        margin: 0 auto;
+        width: 160%;
+    }
+    .opinion p{
         margin-left: 0;
+        max-width: 100%;
     }
     .opinion{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        width: 300px;
+        width: 65%;
         margin: 0 auto;
     }
     .opinion:nth-of-type(2){
@@ -953,7 +958,7 @@ footer.footer p:last-child{
     }
     footer.footer p:last-of-type{
         position: absolute;
-        bottom: 0;
+        bottom: 5px;
         right: 50%;
         transform: translateX(50%);
     }
