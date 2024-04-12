@@ -958,6 +958,9 @@ footer.footer p:last-child{
         margin-top: 60px;
         font-weight: 600;
     }
+    section.delivery h2{
+        font-weight: 600;
+    }
 }
 @media (max-width: 495px){
     section.catalog div.content > span{
