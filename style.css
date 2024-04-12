@@ -787,8 +787,11 @@ footer.footer p:last-child{
         height: 60px;
         justify-content: center;
     }
+    header img[alt='logo']{
+        margin-left: 30px;
+    }
     div.header{
-        width: 70%;
+        width: 80%;
     }
     div.burger{
         display: flex;
