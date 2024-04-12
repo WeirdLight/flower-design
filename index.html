@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <script defer type="module" src="./scripts/index.js"></script>
+    <title>Flower Design</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="burger" id="burger"></div>
+            <a href="#"><img alt='logo' src="./images/menu/logo.png" /></a>
+            <span class="menu-list">
+                <span>
+                    <a href='#'>Каталог</a>
+                    <a href='#'>Про нас</a>
+                    <a href='#'>Збери букет</a>
+                    <a href='#'>Контакти</a>
+                </span>
+                <span>
+                    <img alt="lupa" src="./images/menu/lupa.png" />
+                    <button class="basket"><span id="numOfItems">0</span></button>
+                    <!-- <span id="numOfItems">0</span> -->
+                </span>
+            </span>
+        </div>
+    </header>
+    <aside id="basket">
+        <h2>Обрані позиції:</h2>
+        <h2 id="total-price">Загальна ціна: 0</h2>
+    </aside>
+    <aside id="menu">
+        <span>
+            <a href='#'>Каталог</a>
+            <a href='#'>Про нас</a>
+            <a href='#'>Збери букет</a>
+            <a href='#'>Контакти</a>
+        </span>
+    </aside>
+    <section class="main-page">
+        <img src="./images/section1/bg_web-no-background.png" alt="web-background" />
+        <div class="section1">
+            <h1>Букет із кущових троянд “Довгоочікуване щастя”</h1>
+            <p>Ніжний та витончений шик у букеті з троянд - гарний вибір для коханої людини</p>
+            <span>
+                <button>В кошик</button>
+                <button class="button1">В каталог</button>
+            </span>
+        </div>
+    </section>
+    <section class="about-us">
+        <span class="options">
+            <span class="bouquets">
+                <button>Букети</button>
+            </span>
+            <span class="natural-flowers">
+                <button>Живі квіти</button>
+            </span>
+            <span class="own-bouquet">
+                <button>"Свій" букет</button>
+            </span>
+        </span>
+        <span class="below-options">
+            <span class="description">
+                <h2>Про нас</h2>
+                <hr />
+                <p>Яких квітів тут лише немає! І садові, і польові, і кімнатні у глиняних горщиках. Очі розбігаються від такого достатку.</p>
+                <p>Тут представлена і багата колекція кімнатних рослин: кактуси різної форми та величини, ніжні фіалки, усипані квітами, аспарагуси, фікуси.</p>
+            </span>
+            <span class="side-imgs">
+                <img src="./images/section2/abstract_background (1).png" alt="abstract-figure"/>
+                <img src="./images/section2/women.png" alt="women">
+                <span class="social-media">
+                    <a href="#"><img src="./images/section2/inst.png" alt="instagram"></a>
+                    <a href="#"><img src="./images/section2/fb.png" alt="facebook"></a>
+                    <a href="#"><img src="./images/section2/viber.png" alt="viber"></a>
+                </span> 
+            </span>
+        </span>
+    </section>
+    <section class="our-functions">
+        <span class="container1">
+            <span class="header"><h2>Працюємо для вас</h2></span>
+            <span class="container">
+                <span>
+                    <img src="./images/section3/constructor.png" alt="constructor">
+                    <p>Конструктор унікального букета</p>
+                </span>
+                <span>
+                    <img src="./images/section3/delivery.png" alt="delivery">
+                    <p>Безкоштовна доставка по місту до 2-х годин</p>
+                </span>
+                <span>
+                    <img src="./images/section3/indoor.png" alt="indoor">
+                    <p>Наявність <br/>кімнатних рослин</p>
+                </span>
+                <span>
+                    <img src="./images/section3/for_loved_ones.png" alt="bear">
+                    <p>Вибір квітів для коханих, мам та друзів</p>
+                </span>
+            </span>
+        </span>
+    </section>
+    <section class="catalog">
+        <span class="container1">
+            <h2>Каталог</h2>
+            <div id="catalog" class="content" id="catalog"></div>
+        </span>
+        <img src="./images/section4-catalog/flower-bg.svg" alt="bg-flower">
+        <footer id="section-catalog">
+            <button id="back-catalog" style="background-image: url(./images/footer-circles/Arrow2.png);"></button>
+            <span class="circle active"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <button id="next-catalog" style="background-image: url(./images/footer-circles/Arrow1.png);"></button>
+        </footer>
+    </section>
+    <section class="review">
+        <span class="container1">
+            <h2>Відгуки</h2>
+            <span id="review"></span>
+            <img src="./images/section4-catalog/flower-bg.svg" alt="bg-flower">
+            <footer id="section-review">
+                <button id="back-review" style="background-image: url(./images/footer-circles/Arrow2.png);"></button>
+                <span class="circle active"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <button id="next-review" style="background-image: url(./images/footer-circles/Arrow1.png);"></button>
+            </footer>
+            <h2>Додати відгук</h2>
+            <textarea id="name" placeholder="Ваше імʼя"></textarea> 
+            <textarea id="new-opinion" placeholder="Ваш відгук:"></textarea>
+            <button id="new-review">Відправити</button>
+        </span>
+    </section>
+    <section class="delivery">
+        <div class="container1">
+            <h2>Доставка і оплата</h2>
+            <div class="container">
+                <span class="content">
+                    <span>1</span>
+                    <p>Ви замовляєте букет <br/>через <br/>каталог</p>
+                </span>
+                <span class="content">
+                    <span>2</span>
+                    <p>Ви оплачуєте товар через <br/>картку VISA або MC, або <br/>Приват24</p>
+                </span>
+                <span class="content">
+                    <span>3</span>
+                    <p>Вам передзвонять наші <br/>менеджери, якщо потрібно <br/>щось уточнити</p>
+                </span>
+                <span class="content">
+                    <span>4</span>
+                    <p>Надсилаємо фото <br/>зібраного букета, щоб <br/>узгодити <br/>все</p>
+                </span>
+                <span class="content">
+                    <span>5</span>
+                    <p>Доставляємо букет <br/>одержувачу протягом <br/>2-х <br/>годин</p>
+                </span>
+                <span class="content">
+                    <span>6</span>
+                    <p>Сповістимо Вас дзвінком <br/>або повідомленням про <br/>доставку букета</p>
+                </span>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <img src="./images/delivery/flowers 3 (1).png" alt="flower">
+        <p><img alt='logo' src="./images/menu/logo.png" /></p>
+        <div class="container1">
+            <span>
+                <span>
+                    <h3>Контакти</h3>
+                    <ul>
+                        <li><a href="tel:+0950000000">(095) 000 00 00</a></li>
+                        <li><a href="tel:+0970000000">(097) 000 00 00</a></li>
+                        <li>Ми працюємо цілодобово</li>
+                    </ul>
+                </span>
+                <span>
+                    <h3>Інформація</h3>
+                    <ul>
+                        <li><a href="#">Про нас</a></li>
+                        <li><a href="#">Хіт продажу</a></li>
+                        <li><a href="#">Відгуки</a></li>
+                        <li><a href="#">Доставка і оплата</a></li>
+                    </ul>
+                </span>
+                <span>
+                    <h3>Каталог</h3>
+                    <ul>
+                        <li><a href="#">Збери свій букет</a></li>
+                        <li><a href="#">Живі квіти</a></li>
+                        <li><a href="#">Кімнатні рослини</a></li>
+                    </ul>
+                </span>
+            </span>
+            <span class="social">
+                <form action="" method="post" class="email">
+                    <input type="email" name="email" id="email" placeholder="Введіть свій e-mail" />
+                    <input type="submit" value="Підписатися">
+                </form>
+                <span>
+                    <a href="#"><img src="./images/section2/inst.png" alt="instagram"></a>
+                    <a href="#"><img src="./images/section2/fb.png" alt="facebook"></a>
+                    <a href="#"><img src="./images/section2/viber.png" alt="viber"></a>
+                </span>
+            </span>
+        </div>
+        <p>Copyright &#169; 2022</p>
+    </footer>
+    <script>
+        let burger = document.getElementById('burger');
+        let menuItems = document.getElementById('menu');
+        burger.addEventListener('click', () => {
+            menuItems.classList.toggle('open');
+        });
+        let basketButton = document.querySelector('.basket');
+        let basketAside = document.getElementById('basket');
+        basketButton.addEventListener('click', () => {
+            basketAside.classList.toggle('open');
+        })
+    </script>
+</body>
+</html>
