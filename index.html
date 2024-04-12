@@ -47,8 +47,8 @@
             <h1>Букет із кущових троянд “Довгоочікуване щастя”</h1>
             <p>Ніжний та витончений шик у букеті з троянд - гарний вибір для коханої людини</p>
             <span>
-                <button>В кошик</button>
-                <button class="button1">В каталог</button>
+                <button id="openBasket">В кошик</button>
+                <button id="toCatalog" class="button1">В каталог</button>
             </span>
         </div>
     </section>
@@ -227,6 +227,16 @@
         let basketAside = document.getElementById('basket');
         basketButton.addEventListener('click', () => {
             basketAside.classList.toggle('open');
+        });
+        let openBasketButton = document.getElementById('openBasket');
+
+        openBasketButton.addEventListener('click',() => {
+            basketAside.classList.toggle('open');
+        });
+        let toCatalog = document.getElementById('toCatalog');
+        let targetElement = document.getElementById('catalog');
+        toCatalog.addEventListener('click', () => {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
         })
     </script>
 </body>
