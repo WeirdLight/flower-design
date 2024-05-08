@@ -12,15 +12,17 @@ export function createContentTemplate(content, id) {
     }
     else if (id == 'section-review') {
         article = `                
-            <div class="opinion">
-                <img src="${content.img}" alt="${content.title}">
-                <span class="text">
-                    <p class="description">“${content.description}”
-                    </p>
-                        <span class="hr"></span>
-                    <p>${content.name}  ${content.date}</p>
-                </span>
-            </div>
+                <div class='opinion-container'>
+                    <div class="opinion">
+                        <span class='review-img' style="background: no-repeat url('${content.img}') center center; background-size: cover;"></span>
+                        <span class="text">
+                            <p class="description">“${content.description}”
+                            </p>
+                                <span class="hr"></span>
+                            <p>${content.name}  ${content.date}</p>
+                        </span>
+                    </div>
+                </div>
             `;
     }
 

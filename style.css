@@ -420,7 +420,10 @@ img[src="./images/section2/viber.png"]{
     justify-content: space-around;
     flex-wrap: wrap;
 }
-
+.delivery .container{
+    max-width: 700px;
+    margin: 0 auto;
+}
 .our-functions .container p{
     font-family: var(--ff-Sans);
     font-size: var(--fs-small2);
@@ -534,8 +537,9 @@ img[alt='bg-flower']{
 }
 section.review{
     background-color: var(--Color-purple-opacity);
-    height: 710px;
+    height: auto;
     position: relative;
+    padding-bottom: 20px;
 }
 
 section.review h2{
@@ -548,14 +552,17 @@ section.review .container1{
 }
 span#review{
     display: flex;
-    width: 86%;
     flex-wrap: wrap;
+}
+div.opinion-container{
+    width: 100%;
+    display: flex;
 }
 div.opinion{
     margin-top: 23px;
     position: relative;
 }
-.opinion img{
+.opinion .review-img{
     height: 105px;
     width: 105px;
     float: left;
@@ -595,9 +602,9 @@ section.review span.hr{
 section.review .opinion:nth-of-type(2) hr{
     top: 81%;
 }
-.opinion:nth-of-type(2){
-    margin-left: 50%;
-    margin-top: 44px
+div.opinion-container:nth-of-type(2){
+    margin-top: 44px;
+    justify-content: flex-end;
 }
 section.review img[alt='bg-flower']{
     transform: rotate(155deg);
@@ -923,7 +930,7 @@ footer.footer p:last-child{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        width: 65%;
+        max-width: 400px;
         margin: 0 auto;
     }
     aside#basket{
