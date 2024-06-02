@@ -1,6 +1,7 @@
 import { createContentTemplate } from "./fragments.js";
 import { buttonEventListeners } from "./asideBasket.js";
 
+export let reviewExport;
 export function init(item) {
     let url;
     if (item.containerId == 'section-catalog') {
@@ -20,6 +21,7 @@ export function init(item) {
                 fragment.appendChild(createContentTemplate(data[j], item.containerId));
             }
         }
+        if(item.containerId == 'section-review') reviewExport = data;
         appendContent(fragment, item);
         });
 }

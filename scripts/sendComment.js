@@ -1,3 +1,5 @@
+import { reviewExport } from "./init.js";
+
 export default function sendNewComment(){
     const sendReview = document.getElementById('new-review');
     const visitorsName = document.getElementById('name');
@@ -8,7 +10,7 @@ export default function sendNewComment(){
         fetch('https://dzdev.wiremockapi.cloud/json/flower', {
             method: 'POST',
             body: JSON.stringify({
-                "id": review.length+1,
+                "id": reviewExport.id+1,
                 "name": visitorsName.value,
                 "date": `${date.getDate()}.${date.getMonth()+1}.${date.getFullYear()}`,
                 "img": "none",
