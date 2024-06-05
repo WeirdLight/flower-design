@@ -1,6 +1,9 @@
 # Flower-design
 HTML/CSS/JS
 
+## Deployed 
+https://flower-design-kate-diachuk.web.app/
+
 ## Setup
 First clone the repo from GitHub, then run:
 $ cd flower-design
