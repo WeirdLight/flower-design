@@ -503,7 +503,6 @@ section.catalog .container1 button{
 .catalog footer, .review footer{
     margin: 36px auto;
     display: flex;
-    width: 150px;
     justify-content: space-between;
     align-items: center;
 }
@@ -521,6 +520,7 @@ section.catalog .container1 button{
 section.catalog footer button, .review footer button{
     background-color: rgba(0,0,0,0);
     border: none;
+    background-repeat: no-repeat;
     border-radius: 0;
     background-size:contain;
     width: 40px;
@@ -913,7 +913,7 @@ footer.footer p:last-child{
     section.review{
         height: 950px;
     }
-    .opinion img{
+    .opinion .review-img{
         float:none;
         margin-bottom: 18px;
         margin-right: 0;
