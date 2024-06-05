@@ -25,7 +25,6 @@ export function createContentTemplate(content, id) {
                 </div>
             `;
     }
-
     return createFragment(article);
 }
 
