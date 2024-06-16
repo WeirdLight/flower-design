@@ -553,6 +553,8 @@ section.review .container1{
 span#review{
     display: flex;
     flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto;
 }
 div.opinion-container{
     width: 100%;
@@ -911,7 +913,12 @@ footer.footer p:last-child{
         margin-right: 3%;
     }
     section.review{
-        height: 950px;
+        height: 1000px;
+    }
+    span#review{
+        width: auto;
+        min-width: none;
+        max-width: none;
     }
     .opinion .review-img{
         float:none;
@@ -925,6 +932,9 @@ footer.footer p:last-child{
     .opinion p{
         margin-left: 0;
         max-width: 100%;
+    }
+    .opinion p.description{
+        width: auto;
     }
     .opinion{
         display: flex;
